@@ -1,9 +1,11 @@
-( function( $ ) {
-  'use strict'
 
-    // WAYPOINT
-    var sticky = new Waypoint.Sticky({
-      element: $('.header-area')[0],
-    })
+jQuery(window).scroll(function () {
 
-} )( jQuery );
+	if (jQuery(window).scrollTop() > 70) {
+		jQuery('.header-area').addClass('header-sticky');
+	}
+	if (jQuery(window).scrollTop() < 71) {
+		jQuery('.header-area').removeClass('header-sticky');
+	}
+
+});

@@ -78,9 +78,6 @@ add_action( 'widgets_init', 'devcan_pagebuilder_widgets_init' );
 function devcan_pagebuilder_scripts() {
 	wp_enqueue_style( 'devcan-pagebuilder-style', get_stylesheet_uri() );
 
-	wp_enqueue_script( 'devcan-pagebuilder-waypoint', get_template_directory_uri() . '/js/waypoint.min.js', array('jquery'), '4.0.1', true );
-	wp_enqueue_script( 'devcan-pagebuilder-sticky-waypoint', get_template_directory_uri() . '/js/sticky.min.js', array('jquery'), '4.0.1', true );
-
 	wp_enqueue_script( 'devcan-pagebuilder-navigation', get_template_directory_uri() . '/js/navigation.js', array(), '20151215', true );
 	wp_enqueue_script( 'devcan-pagebuilder-skip-link-focus-fix', get_template_directory_uri() . '/js/skip-link-focus-fix.js', array(), '20151215', true );
 	wp_enqueue_script( 'devcan-pagebuilder-scripts', get_template_directory_uri() . '/js/scripts.js', array('jquery'), '1.0.0', true );

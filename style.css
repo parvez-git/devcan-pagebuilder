@@ -610,8 +610,11 @@ a:active {
 }
 .menu-toggle {
     position: absolute;
-    top: 12px;
+    top: 15px;
     right: 15px;
+		border: 0 solid;
+		background-color: #f97429;
+		color: #f2f2f2;
 }
 .main-navigation.toggled li {
     width: 100%;
@@ -915,7 +918,7 @@ object {
 	   -moz-box-shadow: 0 1px 0 rgba(12,13,14,0.15), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
 	        box-shadow: 0 1px 0 rgba(12,13,14,0.15), 0 0 0 transparent, 0 0 0 transparent, 0 0 0 transparent;
 }
-.header-area.stuck {
+.header-area.full.header-sticky {
   position:fixed;
   top:0;
 	width: 100%;
